@@ -1,4 +1,4 @@
-package com.tomtom.ejb.helloworld;
+package com.tomtom.rsshub;
 
 import java.io.IOException;
 import java.io.PrintWriter;

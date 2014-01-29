@@ -28,11 +28,9 @@ public class Servlet extends HttpServlet {
 		
 			writer.append(rssParser.parse(rssPayload).toString());
 		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new RuntimeException(e);
 		} catch (FeedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
 		
 		writer.flush();
